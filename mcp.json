@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "slack": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-slack"],
+      "env": {
+        "SLACK_BOT_TOKEN": "xoxb-your-slack-token-here"
+      }
+    },
+    "grafana": {
+      "command": "npx",
+      "args": ["-y", "@grafana/mcp-server"],
+      "env": {
+        "GRAFANA_URL": "https://your-org.grafana.net",
+        "GRAFANA_TOKEN": "glsa_your_grafana_api_key_here"
+      }
+    },
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_your_github_pat_here"
+      }
+    }
+  }
+}
